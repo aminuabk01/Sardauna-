@@ -61,6 +61,24 @@
       transform: translateY(-15px) scale(1.04);
       box-shadow: 0 0 45px rgba(0, 163, 255, 0.35);
     }
+
+    input, textarea {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(0,163,255,0.3);
+    }
+    input:focus, textarea:focus {
+      border-color: #00A3FF;
+      box-shadow: 0 0 0 3px rgba(0,163,255,0.2);
+      outline: none;
+    }
+
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    .social-icon:hover {
+      color: #00A3FF;
+      transform: translateY(-4px);
+    }
   </style>
 </head>
 <body class="min-h-screen">
@@ -73,6 +91,7 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
         <a href="#experience" class="nav-link">Journey</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -144,54 +163,169 @@
       <h2 class="section-title text-5xl font-bold mb-12">Featured Projects</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="glass rounded-3xl overflow-hidden card-hover">
-          <div class="h-64 bg-gradient-to-br from-cyan-500/20 to-transparent flex items-center justify-center text-6xl font-bold opacity-30">BITKOVA</div>
+          <div class="h-64 bg-gradient-to-br from-blue-600/30 to-cyan-500/10 flex items-center justify-center text-6xl font-bold opacity-40">BITKOVA</div>
           <div class="p-8">
-            <h3 class="text-2xl font-semibold">Bitkova Academy</h3>
-            <p class="text-gray-400 mt-3">Premier Web3 education platform empowering thousands with knowledge in Hausa & English.</p>
-            <a href="https://x.com/Mahmoudsardauna" target="_blank" class="block mt-8 text-[#00A3FF] font-medium hover:underline">Learn More →</a>
+            <h3 class="text-2xl font-semibold mb-2">Bitkova Academy</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Largest Hausa-English Web3 education platform empowering thousands in Northern Nigeria.</p>
+            <a href="https://x.com/Mahmoudsardauna" target="_blank" class="mt-8 inline-block text-[#00A3FF] hover:underline font-medium">Learn More →</a>
           </div>
+        </div>
+
+        <div class="glass rounded-3xl overflow-hidden card-hover">
+          <div class="h-64 bg-gradient-to-br from-purple-600/30 to-violet-500/10 flex items-center justify-center text-6xl font-bold opacity-40">APTOS</div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Aptos Africa Initiative</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Driving mass adoption of Aptos blockchain across West Africa.</p>
+            <a href="https://x.com/Mahmoudsardauna" target="_blank" class="mt-8 inline-block text-[#00A3FF] hover:underline font-medium">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl overflow-hidden card-hover">
+          <div class="h-64 bg-gradient-to-br from-emerald-600/30 to-teal-500/10 flex items-center justify-center text-6xl font-bold opacity-40">ISLAMFI</div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">IslamFi Movement</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Promoting Halal DeFi and ethical blockchain solutions.</p>
+            <a href="https://x.com/Mahmoudsardauna" target="_blank" class="mt-8 inline-block text-[#00A3FF] hover:underline font-medium">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 bg-black/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-4 text-center">Services</h2>
+      <p class="text-center text-gray-400 max-w-xl mx-auto mb-12">High-value Web3 services delivered with expertise and impact.</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-graduation-cap text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">Web3 Education & Training</h3>
+          <p class="text-gray-400">Comprehensive workshops, courses, and training programs in Hausa & English.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-pen-nib text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">Content Strategy & Creation</h3>
+          <p class="text-gray-400">Educational threads, scripts, long-form content and full strategy.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-users text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">Community Building</h3>
+          <p class="text-gray-400">Strategic community growth and engagement for African audiences.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-handshake text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">IslamFi & Halal Finance Consulting</h3>
+          <p class="text-gray-400">Shariah-compliant DeFi guidance and ethical investment strategies.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-microphone text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">Keynote Speaking & Workshops</h3>
+          <p class="text-gray-400">Inspiring talks, panels, and interactive workshops.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl card-hover">
+          <i class="fa-solid fa-chart-line text-4xl mb-6 text-[#00A3FF]"></i>
+          <h3 class="text-2xl font-semibold mb-3">Aptos Ecosystem Advisory</h3>
+          <p class="text-gray-400">Consulting and growth strategies in Aptos ecosystem.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="py-24 bg-black/40">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="section-title text-5xl font-bold mb-16 text-center">Journey</h2>
+  <section id="experience" class="py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-16 text-center">My Journey</h2>
       <div class="space-y-12">
         <div class="flex gap-8">
-          <div class="w-28 text-right shrink-0">
-            <span class="block text-[#00A3FF]">2023 — Present</span>
+          <div class="w-28 text-right shrink-0 pt-1">
+            <span class="block text-[#00A3FF] font-medium">2025 — Present</span>
           </div>
-          <div>
-            <h4 class="text-2xl font-semibold">Lead, Bitkova Academy</h4>
-            <p class="text-gray-400">Building impactful Web3 education across Africa.</p>
+          <div class="flex-1">
+            <h4 class="text-2xl font-semibold">Web3 Content Strategist &amp; Builder</h4>
+            <p class="text-gray-400 mt-3">Creating high-impact educational content and building communities across Africa.</p>
           </div>
         </div>
+
         <div class="flex gap-8">
-          <div class="w-28 text-right shrink-0">
-            <span class="block text-[#00A3FF]">2024 — Present</span>
+          <div class="w-28 text-right shrink-0 pt-1">
+            <span class="block text-[#00A3FF] font-medium">2023 — Present</span>
           </div>
-          <div>
-            <h4 class="text-2xl font-semibold">Contributor, Aptos Ecosystem</h4>
-            <p class="text-gray-400">Creating educational content and driving adoption.</p>
+          <div class="flex-1">
+            <h4 class="text-2xl font-semibold">Lead &amp; Founder</h4>
+            <p class="text-[#00A3FF]">Bitkova Academy</p>
+            <p class="text-gray-400 mt-3">Building Northern Nigeria’s largest Web3 education platform.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-8">
+          <div class="w-28 text-right shrink-0 pt-1">
+            <span class="block text-[#00A3FF] font-medium">2024 — Present</span>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-2xl font-semibold">Ecosystem Contributor</h4>
+            <p class="text-[#00A3FF]">Aptos Blockchain</p>
+            <p class="text-gray-400 mt-3">Educational content and community growth initiatives.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer / Contact -->
-  <footer id="contact" class="py-24 border-t border-white/10">
+  <!-- Contact Form -->
+  <section id="contact" class="py-24 bg-black/40">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-4 text-center">Get In Touch</h2>
+      <p class="text-center text-gray-400 mb-12">Interested in collaboration or speaking? Let's connect.</p>
+
+      <div class="glass p-10 rounded-3xl">
+        <form action="https://formspree.io/f/your-email-here" method="POST" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm mb-2 text-gray-400">Your Name</label>
+              <input type="text" name="name" required class="w-full px-6 py-4 rounded-2xl text-white placeholder-gray-500">
+            </div>
+            <div>
+              <label class="block text-sm mb-2 text-gray-400">Email Address</label>
+              <input type="email" name="email" required class="w-full px-6 py-4 rounded-2xl text-white placeholder-gray-500">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm mb-2 text-gray-400">Subject</label>
+            <input type="text" name="subject" required class="w-full px-6 py-4 rounded-2xl text-white placeholder-gray-500">
+          </div>
+
+          <div>
+            <label class="block text-sm mb-2 text-gray-400">Message</label>
+            <textarea name="message" rows="6" required class="w-full px-6 py-4 rounded-3xl text-white placeholder-gray-500 resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-[#00A3FF] hover:bg-cyan-400 text-black font-semibold py-5 rounded-2xl transition text-lg">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Social Icons -->
+  <footer class="py-16 border-t border-white/10">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <p class="text-3xl mb-6">Let's Connect</p>
-      <a href="https://x.com/Mahmoudsardauna" target="_blank" 
-         class="inline-flex items-center gap-4 text-5xl hover:text-[#00A3FF] transition">
-        <i class="fa-brands fa-x-twitter"></i> @Mahmoudsardauna
-      </a>
-      <p class="mt-20 text-sm text-gray-500">
-        Built by Aminu • Zero Authority DAO Bootcamp
+      <div class="flex justify-center gap-10 text-4xl mb-10">
+        <a href="https://x.com/Mahmoudsardauna" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" target="_blank" class="social-icon"><i class="fa-solid fa-globe"></i></a>
+      </div>
+      <p class="text-sm text-gray-500">
+        Built by Aminu • Zero Authority DAO Bootcamp 
       </p>
     </div>
   </footer>
