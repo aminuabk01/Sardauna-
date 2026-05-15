@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Sardauna | Web3 Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    :root {
+      --navy: #0A1628;
+      --cyan: #00A3FF;
+      --steel: #1A3A5C;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--navy);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(26, 58, 92, 0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(0, 163, 255, 0.25);
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #0A1628 0%, #1A3A5C 100%);
+    }
+
+    .glow-cyan {
+      box-shadow: 0 0 35px rgba(0, 163, 255, 0.6);
+    }
+
+    .nav-link { transition: all 0.3s ease; }
+    .nav-link:hover {
+      color: #00A3FF;
+      transform: translateY(-2px);
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background: #00A3FF;
+      bottom: -10px;
+      left: 0;
+    }
+
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-15px) scale(1.04);
+      box-shadow: 0 0 45px rgba(0, 163, 255, 0.35);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 glass border-b border-cyan-500/20">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tighter">MAHMOUD<span class="text-[#00A3FF]">SD</span></div>
+      <div class="hidden md:flex gap-10 text-sm font-medium">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#contact" class="px-7 py-3 bg-[#00A3FF] hover:bg-cyan-400 text-black font-semibold rounded-full transition">Let's Connect</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20 relative">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <img src="https://i.imgur.com/4gdCOdV.jpeg" 
+           alt="Mahmoud Sardauna" 
+           class="w-52 h-52 rounded-3xl mx-auto mb-10 border-4 border-[#00A3FF]/60 glow-cyan object-cover">
+
+      <h1 class="text-7xl md:text-[5.5rem] font-bold tracking-tighter mb-4">Mahmoud Sardauna</h1>
+      <p class="text-3xl md:text-4xl text-[#00A3FF] font-light mb-6">Web3 Content Strategist &amp; Builder</p>
+      <p class="max-w-2xl mx-auto text-xl text-gray-300">
+        Leading Bitkova Academy • Aptos Contributor • Empowering Africa with Halal Web3 Knowledge
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 justify-center mt-14">
+        <a href="#projects" class="px-10 py-5 bg-white text-black font-semibold rounded-2xl hover:bg-gray-100 transition text-lg">Explore My Work</a>
+        <a href="#contact" class="px-10 py-5 border-2 border-[#00A3FF] font-semibold rounded-2xl hover:bg-[#00A3FF]/10 transition text-lg">Start a Collaboration</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-12">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-16">
+        <div class="space-y-8 text-lg text-gray-300">
+          <p>From Electrical Engineering to Web3 education and strategy. I’m dedicated to making blockchain technology accessible to Hausa-speaking communities and promoting ethical, Halal financial systems.</p>
+          <p>As the Lead of Bitkova Academy and an active contributor in the Aptos ecosystem, I create high-impact content and build communities that drive real adoption across Africa.</p>
+        </div>
+        <div class="glass p-10 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-8 text-[#00A3FF]">Mission</h3>
+          <ul class="space-y-6 text-lg">
+            <li class="flex gap-4 items-start"><span class="text-2xl text-[#00A3FF]">→</span> Democratize Web3 Education</li>
+            <li class="flex gap-4 items-start"><span class="text-2xl text-[#00A3FF]">→</span> Promote Financial Sovereignty</li>
+            <li class="flex gap-4 items-start"><span class="text-2xl text-[#00A3FF]">→</span> Advance #IslamFi &amp; Halal Innovation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 bg-black/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-12 text-center">Expertise</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="glass p-8 rounded-3xl text-center card-hover">Web3 Education</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Content Strategy</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Crypto Trading</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Community Leadership</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Aptos Ecosystem</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Islamic Finance</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Digital Marketing</div>
+        <div class="glass p-8 rounded-3xl text-center card-hover">Public Speaking</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-12">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass rounded-3xl overflow-hidden card-hover">
+          <div class="h-64 bg-gradient-to-br from-cyan-500/20 to-transparent flex items-center justify-center text-6xl font-bold opacity-30">BITKOVA</div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold">Bitkova Academy</h3>
+            <p class="text-gray-400 mt-3">Premier Web3 education platform empowering thousands with knowledge in Hausa & English.</p>
+            <a href="https://x.com/Mahmoudsardauna" target="_blank" class="block mt-8 text-[#00A3FF] font-medium hover:underline">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-24 bg-black/40">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title text-5xl font-bold mb-16 text-center">Journey</h2>
+      <div class="space-y-12">
+        <div class="flex gap-8">
+          <div class="w-28 text-right shrink-0">
+            <span class="block text-[#00A3FF]">2023 — Present</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Lead, Bitkova Academy</h4>
+            <p class="text-gray-400">Building impactful Web3 education across Africa.</p>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <div class="w-28 text-right shrink-0">
+            <span class="block text-[#00A3FF]">2024 — Present</span>
+          </div>
+          <div>
+            <h4 class="text-2xl font-semibold">Contributor, Aptos Ecosystem</h4>
+            <p class="text-gray-400">Creating educational content and driving adoption.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="py-24 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-3xl mb-6">Let's Connect</p>
+      <a href="https://x.com/Mahmoudsardauna" target="_blank" 
+         class="inline-flex items-center gap-4 text-5xl hover:text-[#00A3FF] transition">
+        <i class="fa-brands fa-x-twitter"></i> @Mahmoudsardauna
+      </a>
+      <p class="mt-20 text-sm text-gray-500">
+        Built by Aminu • Zero Authority DAO Bootcamp
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').length > 1) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
